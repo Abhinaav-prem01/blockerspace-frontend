@@ -12,7 +12,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://blockerspace-backend.onrender.com/api/auth/register", {
+      const res = await fetch("https://blockerspace2-backend.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
