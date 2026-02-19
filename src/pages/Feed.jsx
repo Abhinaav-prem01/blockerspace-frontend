@@ -9,7 +9,7 @@ function Feed() {
   // Fetch posts
   const fetchPosts = async () => {
     try {
-      const res = await fetch("https://blockerspace2-backend.onrender.com/api/posts");
+      const res = await fetch("https://blockerspace2.onrender.com/api/posts");
       const data = await res.json();
       setPosts(data);
     } catch (err) {
@@ -31,7 +31,7 @@ function Feed() {
     }
 
     try {
-      const res = await fetch("https://blockerspace2-backend.onrender.com/api/posts", {
+      const res = await fetch("https://blockerspace2.onrender.com/api/posts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -58,7 +58,7 @@ function Feed() {
 
     try {
       const res = await fetch(
-        `https://blockerspace2-backend.onrender.com/api/posts/${id}/like`,
+        `https://blockerspace2.onrender.com/api/posts/${id}/like`,
         {
           method: "PUT",
           headers: {
