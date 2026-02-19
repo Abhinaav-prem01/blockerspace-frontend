@@ -10,7 +10,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://blockerspace2-backend.onrender.com/api/auth/login", {
+      const res = await fetch("https://blockerspace2.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
